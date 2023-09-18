@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Sono:wght@200&family=Zilla+Slab:wght@500&display=swap');
+:root {
+--primary: #E4E6EB;
+}
+*{
+font-family:'Zilla Slab';
+}
+body {
+background: #18191A;
+margin: 0;
+}
+header{
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+background: #3A3B3C;
+height: 90px;
+margin-top: -25px;
+}
+header .container {
+max-width: 1400px;
+margin: 0 auto;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+header a {
+padding-top: 5px;
+padding-left: 20px;
+position: absolute;
+width: 90%;
+font-size: 20px;
+font-weight: 600;
+color: transparent;
+background-image: linear-gradient(to right ,#95C8D8, #94a7c7,#7285A5 );
+-webkit-background-clip: text;
+background-clip: text;    
+background-size: 200%;
+background-position: -200%;
+animation: animated-gradient 2s infinite alternate-reverse;      
+}
+@keyframes animated-gradient{
+  to{
+    background-position: 200%;
+  }
+}
+.pages{
+max-width: 1400px;
+padding: 20px;
+margin: 0 auto;
+}
+/* homepage */
+.home {
+display: grid;
+grid-template-columns: 3fr 1fr;
+gap: 100px;
+}
+.workout-details {
+background: #3A3B3C;
+border-radius:4px;
+margin: 13px 13px 13px 13px;
+padding: 18px;
+display:inline-block;
+width: 220px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+.workout-details h4 {
+margin: -20px 0 8px 0;
+font-size: 18px;
+color: var(--primary); 
+text-shadow: 1px 1px 4px #222831 ;
+}
+.workout-details p {
+margin:0;
+font-size:13px;
+color: #B0B3B8;
+}
+.workout-details strong {
+color: var(--primary);
+}
+.workout-details span {
+width: 13px;
+height: 13px;
+display:inline-block;
+padding: 6px;
+margin-left: 195px;
+cursor:pointer;
+font-size: 13px;
+background: #18191A;
+border-radius:3px;
+color: var(--primary);
+box-shadow:0 0 15px 4px rgba(181, 181, 181, 0.123);
+
+}
+
+/* new workout form */
+Label{
+text-align: center;
+font-size: 13px;
+color: var(--primary);
+display: block;
+}
+input {
+display: block;
+text-align: center;
+font-size: 14px;
+color: #18191A;
+padding: 10px;
+margin: 10px 0 20px 0;
+width: 100%;
+height: 22px;
+border:1px solid #3A3B3C;
+border-radius: 7px;
+box-sizing: border-box;
+box-shadow:0 0 15px 4px rgba(132, 132, 132, 0.273);
+}
+form button {
+font-size: 13px;
+color:#E4E6EB;
+background: #18191A;
+padding:10px;
+margin : 20px 0  0 55px;
+cursor:pointer;
+border-radius: 4px;
+border:0;
+box-shadow:0 0 15px 4px rgba(181, 181, 181, 0.123);
+}
+div.error {
+font-size: 13px;
+color: #18191A;
+background: #B0B3B8;
+margin: 20px 10px;
+padding: 7px 7px;
+border-radius: 4px;
+border: 1px solid rgb(99, 73, 73);
+backdrop-filter: blur(100px);
+}
+form.create {
+position: relative;
+display: inline-block;
+background-color: #3A3B3C;
+width: 220px;
+height: 428px;
+padding: 15px 15px;
+margin:15px 0 0 20px;
+border-radius:4px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.record-h3{
+color: var(--primary);
+margin-bottom: 45px;
+text-decoration: none;
+text-align: center;
+}
+.dateFns{
+font-style: italic;
+padding-top: 3px;
+color: #B0B3B8;
+font-size: 12px;
+}
