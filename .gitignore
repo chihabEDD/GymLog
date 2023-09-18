@@ -1,0 +1,33 @@
+# Node.js dependencies
+node_modules/
+
+# Build files
+/build/
+/build-es5/
+/build-es6/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# User and IDE-specific files
+.vscode/
+.idea/
+.DS_Store
+Save to grepper
+You can add or modify these patterns as needed for your specific project. This .gitignore file should help you avoid tracking unnecessary files and directories in your MERN stack project repository.
+
+
+
+
+
